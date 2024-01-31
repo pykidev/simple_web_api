@@ -18,5 +18,5 @@ app.post('/', (req, res) => {
 
 // Start the server
 app.listen(port, () => {
-  console.log(`Server is listening on port ${IPADDR}:${port}`);
+  console.log(`Server is listening on port ${port}`);
 });
