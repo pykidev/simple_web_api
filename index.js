@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 // Handle POST requests to the root endpoint
 app.post('/', (req, res) => {
   // Log the received data to the console
-  console.log('Received POST request:', req.body);
+  console.log('Received POST request:', req.body.object);
 
   // Respond with a simple message
   res.send('Data received successfully!');
