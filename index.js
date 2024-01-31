@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 
 const app = express();
 const port = 3000;
-const IPADDR = '192.168.119.81'
+//const IPADDR = '192.168.119.81'
 // Use body-parser middleware to parse JSON requests
 app.use(bodyParser.json());
 
@@ -17,6 +17,6 @@ app.post('/', (req, res) => {
 });
 
 // Start the server
-app.listen(port, IPADDR, () => {
+app.listen(port, () => {
   console.log(`Server is listening on port ${IPADDR}:${port}`);
 });
